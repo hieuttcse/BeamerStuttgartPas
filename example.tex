@@ -1,0 +1,72 @@
+\documentclass[
+  xcolor={svgnames},
+  hyperref={colorlinks,citecolor=DeepPink4,linkcolor=DarkRed,urlcolor=DarkBlue}
+  ]{beamer}
+
+% define using customized theme.
+\usetheme{pas}
+
+% define using packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% the general information.
+\title[Largest Prime Number?] % (optional, only for long titles)
+{There Is No Largest Prime Number}
+\subtitle{Presents with Stuttgart Pas Beamer theme}
+
+\author[tmip, hieutt] % (optional, for multiple authors)
+{T.~Mip\inst{1} \and TT.~Hieu\inst{2}}
+\institute[Universities Here and There] % (optional)
+{
+  \inst{1}%
+  Institute of Computer Science\\
+  University Here
+  \and
+  \inst{2}%
+  Institute of Theoretical Philosophy\\
+  University There
+}
+\date[TX 2014] % (optional)
+{Base on a guide on \cite{BaseOn},2014}
+\subject{Computer Science}
+
+
+
+% begin presentation content
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\begin{frame}
+\frametitle{There Is No Largest Prime Number}
+\framesubtitle{The proof uses \textit{reductio ad absurdum}.}
+\begin{theorem}
+There is no largest prime number. \end{theorem}
+\begin{enumerate}
+\item<1-| alert@1> Suppose $p$ were the largest prime number.
+\item<2-> Let $q$ be the product of the first $p$ numbers.
+\item<3-> Then $q+1$ is not divisible by any of them.
+\item<1-> But $q + 1$ is greater than $1$, thus divisible by some prime
+number not in the first $p$ numbers.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{A longer title}
+\begin{itemize}
+\item one
+\item two
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]
+   \frametitle{References}
+   \bibliographystyle{plain}
+   \bibliography{lib}
+\end{frame}
+
+\end{document}
